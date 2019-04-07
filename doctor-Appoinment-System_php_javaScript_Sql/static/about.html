@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bootstrap magic</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+	<Style>
+	body
+    {
+	background-color: #4C4B4B;
+    }
+    .nav-item a
+    {
+    	color: #67E6DC;
+    }
+    .content
+    {
+    	background-color:#2F363F;
+    	color: #01CBC6;
+    	overflow: hidden;
+    	backface-visibility: hidden;
+    	text-align: center;
+    	border-radius: 10px;
+    	font-family: Georgia;
+    }
+    span
+    {
+        border-bottom:1px solid #fff;
+        font-size: 25px;
+        color: #ffffff;
+    }
+    .content div
+    {
+    	padding: 20px 25px 5px;
+    	display: none;
+
+    }
+    input
+    {
+
+    }
+    label
+    {
+    	color: #EA7773;
+    	display: inline-block;
+    	font-weight: 600;
+    	text-align: center;
+    	border-bottom: 1px solid transparent;
+    	padding: 10px;
+    	transition: all .3s ease-in-out 0.1s;
+    	margin: 10px;
+    	font-family: Times Header;
+
+    }
+    label:hover
+    {
+    	display:;
+    	color: #fff;
+    	cursor: pointer;
+    	
+
+
+    }
+    input:checked +label
+    {
+    	background-color: 
+    	color: #fd7034;
+    	border-bottom: 1px solid;
+    }
+    #tab-1:checked ~ .content .content-1,
+    #tab-2:checked ~ .content .content-2,
+    #tab-3:checked ~ .content .content-3,
+    #tab-4:checked ~ .content .content-4
+    {
+    	display: block;
+    	animation-name: inUp;
+    	animation-timing-function: ease-in-out;
+    	animation-duration: .6s;
+    }
+ @media (min-width: 481px) and (max-width: 767px) 
+    {
+  . label
+    {
+        color: #EA7773;
+        display: inline-block;
+        font-weight: 600;
+        text-align: left;
+        border-bottom: 1px solid transparent;
+        padding: 0px;
+        transition: all .3s ease-in-out 0.1s;
+        margin: auto;
+        font-family: Times Header;
+
+    }
+
+    }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) 
+   {
+  
+label
+    {
+        color: #EA7773;
+        display: inline-block;
+        font-weight: 600;
+        text-align: left;
+        border-bottom: 1px solid transparent;
+        padding: 0px;
+        transition: all .3s ease-in-out 0.1s;
+        margin: auto;
+        font-family: Times Header;
+
+    }
+  
+   }   
+
+    @keyframes inUp
+    {
+    	0%
+    	{
+    		opacity: 0;
+    		transform: translatey(100px);
+    	}
+    	90%
+    	{
+    		transform: translatey(-10px);
+    	}
+    	100%{
+
+    		opacity: 1;
+    		transform: translatey(0);
+    	}
+    }
+   
+
+
+</Style>
+<!-- navigation -->
+<nav class="navbar navbar-dark navbar-expand-sm bg-dark ">
+	<a href="../index.html" class="navbar-brand mr-auto ml-auto">My Appoinment</a>
+	<div class="container-fluid">
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navresponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navresponsive">
+			<ul class="navbar-nav  ">
+                <!-- <li class="nav-item active"><a href="index.html" class="nav-link ">Home</a></li> -->
+                <li class="nav-item"><a href="patient_register.html" class="nav-link ">sign in</a><ul class="ulnav">
+                    <!-- <li><a href="registeration.html">AS a Patient</a></li>
+                    <li><a href="registeration2.html">As a Doctor</a></li> -->
+                </ul></li>
+                <li class="nav-item"><a href="../php/patient_module/patient_login.php" class="nav-link ">Log in</a><ul class="ulnav">
+                    <!-- <li><a href="login.php">AS a Patient</a></li>
+                    <li><a href="login2.html">As a Doctor</a></li> --></ul></li> 
+                <li class="nav-item"><a href="about.html" class="nav-link active">About us</a></li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li> -->
+
+            </ul>
+		</div>
+		
+	</div>
+
+</nav>
+<!-- <br> -->
+<!-- <center><h1 class=" animated fadeInDown spancolor" style="font-family:  comic sans Ms">About us</h1></center> -->
+<div class="container-fluid " style="background-color:#2C3335;">
+
+    
+	<center><input id="tab-1" type="radio" name="tab" checked>
+	<label for="">Introduction</label>
+
+	<input  id="tab-2"  type="radio" name="tab" >
+	<label for="">Principal Findings</label>
+
+	<input id="tab-3" type="radio" name="tab" >
+	<label for="">Disclaimer</label>
+    
+    <div class="content">
+    	<div class="content-1">
+    		<h3>Why?  Appointment System</h3>
+    		<p>Traditionally, medical appointments have been made with schedulers over the telephone or in person. These methods are based on verbal communications with real people and allow for maximum flexibility in complicated situations . However, because these traditional methods require the intervention of schedulers, the ability to get a timely appointment is not only limited by the availability of appointment slots, but also by the schedulers and phone lines . Patients’ satisfaction with appointment booking is influenced by their ability to book at the right time with the right health service providers .</p><p>
+
+The Internet has recently emerged as another means to make appointments. Web-based appointment scheduling has been a popular research topic. Several studies conducted satisfaction surveys and found that Web-based appointment scheduling is an extremely important feature, and most patients would use the service again .</p><p>
+
+There are two major types of Web-based medical appointment services, medical scheduling software as a service (SaaS) and proprietary Web-based scheduling systems. Medical scheduling SaaS has gained increasing prominence in recent years. These appointment systems are not built up by health care practices themselves, but are provided and maintained by health IT companies such as ZocDoc and InQuicker on a paid subscription basis . The appointment services are cloud-based and can be integrated into health care providers’ own management systems.</p><p> The other type of appointment service is proprietary appointment systems, which are integrated into patient portals on providers’ websites . A patient portal is a secured Web-based service that allows patients to access their health information and communicate with their health care providers at any time . In the United States, the growth of patient portals has largely been spurred by meaningful use (MU) requirements  because of the federal incentive program for adoption of electronic health records. To meet the requirements of MU and receive its incentives, the portal should be actively used by both the practice and patients .</p><p>
+
+There are two modes of Web-based appointment systems, asynchronous and real-time. In the asynchronous mode, appointments are requested through emails or electronic forms on providers’ website, and then manually processed by schedulers. In the real-time mode, patients can directly interact with providers’ scheduling management systems .</p><p> Although the asynchronous Web-based appointment systems also use the Internet as a medium, they basically replicate the process of telephone-based appointment scheduling [. Under the asynchronous mode, if an appointment is requested outside of a provider’s business hours, it will not be processed until schedulers return to work. Normally, Web-based appointment requests are put in the same queue as phone-call appointments, and are thus limited by the backlog of phone calls in the queue .</p>
+    	</div>
+
+    	<div class="content-2">
+    		<h3></h3>
+    		<p>
+<span>Patient-centeredness</span><br>Patient-Centeredness is one of the six quality aims proposed by the Institute of Medicine to improve health care quality . Web-based medical scheduling as a medical self-service offers a more patient-centered means to make appointments [6]. Most Web-based appointment systems are interfaced with a calendar-like list. Patients can browse and select the most convenient appointment time from the available time slots [21]. In contrast, patients are only given very limited options of available time slots in traditional appointment systems. Besides time slots, some of the Web-based systems allow patients to filter physicians by physicians’ attributes such as education background, experience, gender, and reviews from other patients .</p><p>
+
+Another convenience from improved patient access is that patients can fill out registration forms [26], get prescreened and review practice policies online [23] before they show up and this can smooth workflow and reduce misunderstandings.
+
+In the self-servicing Web-based appointments, patients’ own descriptions of the reason for visit are often more detailed and illuminating [13]. Sometimes, patients might be uncomfortable or unable to vocalize certain symptoms (eg, sexual health problems) to the scheduler over the phone or in person, and they may make an untrue statement [2,13]. They tend to be more candid when they schedule online by themselves [13,20].</p><p>
+
+<span>Reduced No-Show Rates</span><br>
+No-show is a significant cause of wasted clinical resources [40]. The patient-centered design in Web-based appointments has the potential to decrease no-show rates [8,25]. The reasons for the reduction of no-shows after implementing Web-based scheduling have not been systematically studied in the literature, but it could be attributed to the improved access in Web-based scheduling that allows patients to easily verify, cancel, and reschedule their appointments [25]. A possible reason is that patients feel more responsible for their appointments when they make appointments by themselves [44].</p><p>
+
+<span>Reduced Waiting Time</span><br>
+Waiting is an indicator of service quality and a source of dissatisfaction that affects health care outcomes and patient retention [45,46]. Long waiting time may make patients seek care from other providers and thus this can potentially cause a loss in revenue.</p><p>
+
+The most cited benefit of real-time scheduling is after-hour access [1,3,21]. Real-time scheduling requires minimal intervention of schedulers and thus can help reduce the waiting time caused by human factors. The available time slots are transparent to patients through the Web interface. Patients are free to claim available appointment slots anytime and anywhere [3,20,37].</p><p>
+
+The support of same-day or soon appointments by some real-time systems can help further shorten the time between when the appointment is requested and when the medical service is fulfilled [3]. Although there is a concern that the ability to book in advance for chronic conditions might be diminished by same-day appointments due to the limited number of appointment slots [47], same-day appointments could produce positive outcomes as long as the provider can find a balance in his or her capacity. For providers, it is possible to reuse the time slots released due to late cancellations. These allotted time slots will be otherwise wasted if traditional appointment methods are used because of the longer turnaround time [8].</p><p>
+
+<span>Barriers to Adoption</span><br>
+It is well known that medicine has lagged in the adoption of new technologies. Although Web-based appointment scheduling comes with many benefits, some providers and patients are reluctant to use it. By 2007, only about 3.2% of the population in 7 European countries (Denmark, Germany, Greece, Latvia, Norway, Poland, and Portugal) had used the Internet to make medical appointments [41]. Only about 15% of public hospitals and 18% of private hospitals in Italy allowed appointments to be made online in 2008-2009 [39]. According to a study conducted by Google and Compete (a research vendor) in 2012, only 21% of patients booked appointments via computer or mobile devices [48]. Only about 7% of primary care practices in Canada and 30% in the United States offered Web-based appointment services in 2012 [49]. As of 2014, 67% of general practitioner (GP) practices in Scotland have websites and only 10% of them support Web-based appointments [35].</p><p>
+
+There are many reasons for the slow adoption. First, the transition requires the practices to give up legacy systems they have relied on and change the fundamental workflow and administration already established [3,13,28,37]. A large investment would be required for the providers to move toward new centralized Web-based scheduling systems [28].</p><p>
+
+Second, real-time Web-based scheduling lacks flexibility in the medical setting because the automatic appointment systems are not intelligent enough to handle cases not predefined. Unlike the appointment scheduling in other industries such as airline ticket booking, which has strict rules, medical appointments are tailored based on the knowledge of physicians and patients, and thus can be rather flexible [13,28]. Physicians have their own preferences in appointment patterns, whereas the booking preferences for different patients can be rather distinct and can change over time [4]. The “Mabel factor” depicts a situation in which a scheduler knows how to balance the practice’s available resources and human factors such as physicians’ preferences and patients’ needs [3,13]. It is challenging for real-time Web-based scheduling systems to achieve the same level of flexibility. In reality, physicians have to give up their preferred scheduling patterns to accommodate the simplified real-time scheduling rules [3,13].</p><p>
+
+Third, safety is a concern. It is challenging to triage patients who made appointments through real-time Web-based appointment systems. Patients may misuse Web-based appointment systems for urgent conditions that need to be handled immediately by an emergency room or urgent care [13,20]. Because schedulers are no longer involved in the appointment process, the systems should be capable of triaging patients and stratifying their risks accurately. Some practices just display static warning messages on their Web presence to stop patients from using their appointment systems for urgent conditions [13]. Some real-time systems still rely on human reviewers to screen for possible emergencies [3]. Very few real-time appointment systems reported in the literature can automatically identify emergency conditions [2].</p><p>
+
+Finally, many providers have a fear of losing control of their appointment systems, as they think patients may abuse the systems [20,23,44]. For example, patients may book appointment slots and end up with no-shows or late cancellations. As a result, valuable clinical time would be wasted. However, this issue can be addressed by enforcing predefined appointment rules, such as rules for cancellation and a penalty for no-shows [37]. Providers can also block out appointment slots and limit visit types to accommodate their schedules [20]. Blocking patients with no-show history and collecting copay up front when making an appointment can discourage no-shows [37]. Automatically generated email- or message-based reminders can also help reduce no-shows [37]. Some practices refuse to expose physicians’ open time slots, because they believe that patients might think the physicians do not work hard enough when they see many openings [21].</p><p>
+
+In addition to the four main barriers, studies found that the following common problems from the patient side considerably affect the adoption of Web-based scheduling: unawareness of the Web-based appointment service, low penetration and distrust of the Internet, low computer skills, and the preference for verbal communications [1,8,30,31].</p>
+    	</div>
+
+    	<div class="content-3">
+    		<h3></h3>
+    		<p>This is notified that this website, information and services are for routine or normal requirement purposes and not for any emergency services needed by any person.
+
+<br>
+The information contained in this website is for general information purposes only. The information and services is provided by the respective hospitals in association with NIC, DeitY, Govt. of India and while all stakeholders jointly endeavour to keep the information up-to-date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, or services, or related reports, graphics contained on the website for any purpose. Any reliance you place on such information or services is therefore strictly at your own risk.
+
+<br>
+In no event NIC will be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or services, profits arise out of or in connection with the use of this website and application software.
+
+<br>
+NIC have no control over the nature, content and availability of services mentioned in this website.
+<br>
+
+Every effort is made to keep the website up and running smoothly. However, NIC-DeitY takes no responsibility for and will not be liable for the website being temporarily unavailable due to technical issues beyond our control.
+
+</p>
+    	</div>
+
+    </div>
+</center>
+</div>
+
