@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html,body
+{
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins' sans-serif;
+	color: #222;
+
+}
+nav
+{
+	transition: 1s;
+	position: absolute;
+
+
+}
+.navbar
+{
+	padding: .8rem; /*1rem=16px*/
+	
+}
+ul{
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	transition: 1s;
+}
+.ulnav li
+{
+list-style: none;
+display: none;
+transition: 1s;
+z-index: 1;
+text-decoration: none;
+
+}
+ul li:hover ul li
+{
+	
+	position:relative;
+	display: block;
+	
+	
+
+}
+ul li:hover ul 
+{
+	
+	position: absolute;
+	display: block;
+	color: #EAF0F1;
+	border-radius: 4px;
+	background-color:#2F363F;
+}
+
+.ulnav li a
+{
+	display: block;
+	transition: .5s;
+	text-decoration: none;
+	color: #01CBC6;
+}
+.ulnav li a:hover
+{
+	color: #fff;
+}
+.navbar-nav li
+{
+	padding: 10px;
+}
+.nav-link
+{
+	font-size: 1.1em;
+}
+.data-toggler-icon
+{
+	background-color: #EAF0F1;
+}
+.carousel
+{
+	width: 100%;
+	height: 100%;
+}
+.carousel-caption
+{
+	position: absolute;
+	background-color: #222;
+	opacity: 0.7;
+    text-shadow: 1px 1px 15px #000;
+	transform: translatey(-50%);
+}
+.carousel-caption .btn
+{
+	opacity: 1;
+	/*border:2px #664 solid;*/
+}
+.jumbotron
+{
+	padding: 1rem;
+	border-radius: 0;
+}
+.social a
+{
+	margin: 20px;
+	font-size: 30px;
+}
+.social .fa-facebook
+{
+	color: #30336B;
+}
+.social .fa-google
+{
+	color: #E71C23;
+}
+footer
+{
+	background: #4C4B4B;
+	width: 100;
+	padding-top: 2rem;
+	color: #DAE0E2;
+	margin-top: 10px;
+}
+hr.light
+{
+	border:0.5px solid #DAE0E2;
+	width: 70%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.leftsidepic
+{
+}
+tabl
+{
+	margin:20px;
+}
+.warning
+{
+	color: #E71C23;
+	background-color: #E71C23;
+}
+.spancolor
+{
+	color: #67E6DC;
+}
+.tableinput
+{
+	border:none;
+	outline: none;
+	background-color: transparent;
+	border-bottom: 1px solid #fff;
+}
+table .button
+{
+	background-color:#74B9FF;
+	color: #4C4B4B;
+
+}
+.articleh2
+{
+	margin:20px;
+	color: #67E6DC;
+}
+article p
+{
+	color: #74B9FF;
+	text-align: center;
+}
+
+
+
+@media (min-width: 1281px) {
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+ 
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+ 
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width: 992px)
+{
+
+
+}
+@media(max-width: 768px)
+{
+	.carousel-caption h1
+	{
+		font-size: 50px;
+	}
+	..carousel-caption .btn
+	{
+		
+	}
+	.loginbox
+	{
+		position: relative;
+		margin: auto;
+		top: 0;
+	}
+}
